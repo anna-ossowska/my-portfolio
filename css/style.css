@@ -82,7 +82,7 @@ h6 {
 
 .header-text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -93,7 +93,7 @@ h6 {
   margin-bottom: 6rem;
 }
 
-.heading-primary--main {
+.heading-primary-main {
   display: block;
   letter-spacing: 2px;
   font-size: 5rem;
@@ -103,7 +103,7 @@ h6 {
   animation-timing-function: ease-out;
 }
 
-.heading-primary--sub {
+.heading-primary-sub {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
@@ -111,7 +111,7 @@ h6 {
   font-size: 2rem;
   animation: moveInRight 1s ease-out;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.3rem;
 }
 
 @keyframes moveInLeft {
@@ -173,6 +173,7 @@ h6 {
   color: #fff;
   padding: 0.65rem 1.5rem;
   border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn-main {
@@ -193,17 +194,18 @@ h6 {
   text-align: center;
 }
 
-.btn:hover {
-  opacity: 0.9;
+.btn-block:hover {
+  transform: scaleX(1.025) scaleY(1.025);
+  background-color: #2d4f80;
 }
 
-/* Project Header */
-.my-projects h2 {
-  margin: 40px auto 0 auto;
-  padding: 10px;
-  /* border: 1px #333 solid; */
-  border-radius: 5px;
-  font-size: 1.8rem;
+.btn-animated {
+  animation: moveInBottom 0.6s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn-animated:hover {
+  transform: scaleX(1.035) scaleY(1.035);
 }
 
 /* News Card */
