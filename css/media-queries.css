@@ -90,8 +90,12 @@
 
   .header {
     height: 80vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  .heading-primary {
+    margin-bottom: 0;
   }
 
   .heading-primary-main {
@@ -119,8 +123,6 @@
 
   .header {
     height: 70vh;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
   }
 
   .heading-primary-main {
